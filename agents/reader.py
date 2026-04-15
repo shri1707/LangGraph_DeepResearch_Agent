@@ -22,7 +22,7 @@ class ExtractedFacts(BaseModel):
     )
 
 reader_llm = ChatOpenAI(
-    model="mistralai/mistral-7b-instruct",
+    model="mistralai/mistral-7b-instruct-v0.1",
     temperature=0,
     api_key=os.getenv("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1"
